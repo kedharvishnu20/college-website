@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPUTER SCIENCE AND INFORMATION TECHNOLOGY</title>
+    <link rel="icon" href="images/aadyanth.png" type="img/gif">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .navbar-brand img {
+            max-height: 73px; /* Set the max height to match the logo height */
+        }
+
+        .slideshow-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .slideshow {
+            flex-basis: 60%;
+        }
+
+        .paragraph {
+            flex-basis: 35%;
+            padding: 20px;
+        }
+
+        @media (max-width: 767px) {
+            .slideshow-container {
+                flex-direction: column;
+            }
+
+            .slideshow, .paragraph {
+                flex-basis: auto;
+            }
+            
+        }
+        @media(min-width: 767px){
+            .padder{
+                padding-left: 26%;
+            }
+        }
+        #padder{
+            padding-left: auto; /* Default padding */
+            transition: padding 0.3s ease; /* Smooth transition for padding changes*/
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="/images/logo2.png" alt="Logo" width="350" height="60">
+        </a> <div id="padder" class="padder" ></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" style="background-color: black;border-radius: 10px;">
+                <li class="nav-item active">
+                    <a class="nav-link" style="color: aliceblue;text-align: center" href="/home.html" target="disp"> HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/academic.html" target="disp" style="background-color: black;color: aliceblue; text-align: center;" >ACADEMIC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/faculty.html"  style="background-color: black;color: aliceblue;text-align: center" target="disp">FACULTY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html"  style="color: aliceblue;text-align: center" target="disp">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+       
+    </div>
+    <iframe src="/home.html" name="disp" frameborder="0" style="overflow:hidden; 
+         display:block; position: absolute; height: 100%; width: 100%;"></iframe>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

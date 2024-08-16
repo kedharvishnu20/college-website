@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - College</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .contact-info address, .profile {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info address p, .profile p {
+            margin-bottom: 10px;
+        }
+
+        .profile {
+            text-align: center;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 2px solid #ddd;
+        }
+
+        .profile h3 {
+            margin: 10px 0 5px;
+        }
+
+        .contact-link {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        .profiles .row {
+            margin-top: 20px;
+        }
+
+        .profiles h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Profile Background Colors */
+        .profile-principal {
+            background-color: #e3f2fd; /* Light blue */
+        }
+
+        .profile-vp-academics {
+            background-color: #e8f5e9; /* Light green */
+        }
+
+        .profile-vp-administration {
+            background-color: #fff3e0; /* Light pink */
+        }
+
+        .profile-hod-csit {
+            background-color: #f3e5f5; /* Light purple */
+        }
+
+        .profile-hod-sh {
+            background-color: #fff3e0; /* Light orange */
+        }
+
+        .profile-dean-tp {
+            background-color: #ffebee; /* Light red */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .contact-info address, .profile {
+                padding: 15px;
+            }
+
+            .profile-img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Navigation Bar */
+        .navbar-brand img {
+            max-height: 73px;
+        }
+    </style>
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://lh3.googleusercontent.com/pw/AP1GczPlrwhwSpRME_ZE719PApzWK561l6eLQK5kFwRBSILnQOFD2raQ0T-kS3cXuZifMluAvRNiP_qDqrDDEZ9gB7YBsLNnA8Uw_XgGRWR5_bOWiVSAltZijqcUEsbTrPAdhASYQKmrYf-MUB-9L7KpZ9Rm=w772-h73-s-no-gm?authuser=0" alt="Logo2" width="350" height="60">
+        </a>
+        <div id="padder" class="padder"></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto" style="background-color: black;border-radius: 10px;">
+                <li class="nav-item active">
+                    <a class="nav-link" style="color: aliceblue;text-align: center" href="index.html"> HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/academic.html" style="color: aliceblue;text-align: center;">COURSES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/faculty.html" style="color: aliceblue;text-align: center;">FACULTY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: aliceblue;text-align: center;">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="my-5 text-center">Contact Us</h1>
+
+        <!-- College Contact Information -->
+        <section class="contact-info mb-5">
+            <h2 class="mb-4">Lendi Institute Of Engineering and Technology</h2>
+            <address>
+                <p><strong>College Address:</strong> Vizag-Viziangarm Road,Jonnada,Denkada Mandal</p>
+                <p><strong>Pincode:</strong> 535005</p>
+                <p><strong>College Code:</strong> LIET</p>
+                <p><strong>Phone Number:</strong> 08922-241111,241666</p>
+                <p><strong>Fax Number:</strong> 08922-241112</p>
+            </address>
+        </section>
+
+        <!-- Profiles Section -->
+        <section class="profiles">
+            <h2 class="mb-4 text-center">Our Key Personnel</h2>
+            <div class="row">
+                <!-- Principal Profile -->
+                <div class="col-md-4 mb-4">
+                    <div class="profile profile-principal">
+                        <img src="https://lh3.googleusercontent.com/pw/AP1GczNnVdy91kQ1bNm6hdJFfsVmma1nhQtzYSpwFXlnZIe5KL2eCxoocHwN2Mvy-CDUCbiBiGO7Ycoble3LeeHq8xDCcppfsfHbQmB5a66Kh7skR7ZN5O2dG4s8Ef1-HHwzH6oBN3MkTze3iKO7Eg0nHIDo=w626-h532-s-no-gm?authuser=0" alt="Principal" class="profile-img">
+                        <h3>Dr.V.V.Rama Reddy</h3>
+                        <p>Principal</p>
+                        <a href="mailto:lendi_2008@yahoo.com" class="contact-link">
+                            <i class="fa fa-envelope"> lendi_2008@yahoo.com</i> 
+                        </a>
+                        <p>Phone: 9490304747</p>
+                    </div>
+                </div>
+
+              
+                <!-- Vice Principal (Administration) -->
+                <div class="col-md-4 mb-4">
+                    <div class="profile profile-vp-administration">
+                        <img src="https://lh3.googleusercontent.com/pw/AP1GczMDqpTzRKGo_lItVF-3GbH61kTIjPDDDZ24aozNfAOZbzRSe4ZZQL3ptm_c_fqAajAyv7dfteK569_0YTezCzz7uvNTmOZedIthOfwh-Be4jNiM9kpNBu8yCr7G1LKd4w6XaVW_zfjNmg3iWZKDok2Z=w266-h266-s-no-gm?authuser=0" alt="hari babu" class="profile-img">
+                        <h3>Dr. T. Haribabu</h3>
+                        <p>Vice Principal (Administration)</p>
+                        <a href="mailto:viceprincipal.admin@lendi.org" class="contact-link">
+                            <i class="fa fa-envelope"></i> viceprincipal.admin@lendi.org
+                        </a>
+                        <p>Phone: 9440437025</p>
+                    </div>
+                </div>
+
+            <!-- Vice Principal (Academics) -->
+            <div class="col-md-4 mb-4">
+                <div class="profile profile-vp-academics">
+                 <img src="https://lh3.googleusercontent.com/pw/AP1GczOXUq-iSePRElTPQNgBMntAMEdhIu8oUuiozDSMnR6yVJlQOXFG7ujlW-fPEXquQfpHG4mh0ayPE-Fc5VVBT_maLPbIPCIhaG-VUEXItATFDTxaXgDdC50uWn0kuAyZQGktdAvhwiRJCv1Qaeo35rXr=w266-h266-s-no-gm?authuser=0" alt="academic Principal" class="profile-img">
+                 <h3>Prof. K.V. Narasimham</h3>
+                <p>Vice Principal (Academics)</p>
+                <a href="mailto:viceprincipal.acad@lendi.org" class="contact-link">
+                    <i class="fa fa-envelope"></i> viceprincipal.acad@lendi.org
+                </a>
+                <p>Phone: 9866278504</p>
+            </div>
+        </div>
+
+                <!-- HOD of CSIT -->
+                <div class="col-md-4 mb-4">
+            <div class="profile profile-hod-csit ">
+                        <img src=" https://lh3.googleusercontent.com/pw/AP1GczNSeDy-cm3gqKxyPHhkzaa-drpUOXI0_RX227O7smGIcbWue9gxrywPX-aKENUBZCjBHsoedambWE828a7RB9eSVmSvMTXqYF2QXSBsEJ8-26ueO0KtUS2FO3SCqxqQGEvlfnboRWL2792RvRGp5g0X=w200-h200-s-no-gm?authuser=0" alt="sateesh" class="profile-img">
+                        <h3>Prof. G. Sateesh</h3>
+                        <p>HOD of CSIT</p>
+                        <a href="mailto:sateesh.gudla@lendi.org" class="contact-link">
+                            <i class="fa fa-envelope"></i> sateesh.gudla@lendi.org
+                        </a>
+                        <p>Phone: 9381395778</p>
+                    </div>
+                </div>
+
+                <!-- HOD of S&H Dept -->
+                <div class="col-md-4 mb-4">
+                    <div class="profile profile-hod-sh">
+                        <img src="https://lh3.googleusercontent.com/pw/AP1GczMvxe0OoZl1w2OtVLJ9k1PfDGZ6Y_xe3tYjn3UJfrfcD5Ow7mHiyL27vwl2cN-G46Ir8qq0vVz_w4v1WgtoxmzzHM6QRXdy0N03Ytzw0ufa2ZJXZ6zBkP1kvojLbPbIv4jX15ey5oAt8mlymVt0NYIm=w266-h266-s-no-gm?authuser=0" alt="Sailaja" class="profile-img">
+                        <h3>Dr. P.D. Sailaja</h3>
+                        <p>HOD of S&H Dept</p>
+                        <a href="mailto:durgasailaja.pericherla@lendi.org" class="contact-link">
+                            <i class="fa fa-envelope"></i> durgasailaja.pericherla@lendi.org
+                        </a>
+                        <p>Phone: 9491602190</p>
+                    </div>
+                </div>
+
+                <!-- Dean (T&P) -->
+                <div class="col-md-4 mb-4">
+                    <div class="profile profile-dean-tp">
+                        <img src="https://lh3.googleusercontent.com/pw/AP1GczOI4HGDpedfpM9dUweHqqzDP_97CmVN80IojzrQgfhKQWKCrD47193A02gQ1yioFHF-rwh7Uk_Mdi3qoNGUWb7ZC3tPtpTyoKpodhFZQIPiyqqrtPly9u27gMqC9WeVCLQWzNnmANyYqixT9i9zcV90=w266-h266-s-no-gm?authuser=0" alt="PRAKASH_BABU" class="profile-img">
+                        <h3>Mr. G. Prakash Babu        </h3>
+                        <p>Dean (T&P)</p>
+                        <a href="mailto:dean_tp@college.edu" class="contact-link">
+                            <i class="fa fa-envelope"></i> tpo.lendi@gmail.com
+                        </a>
+                        <p>Phone: 94911984470</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-iK5w+Fd4Trm6m6Y6zLX8tW8j1I+0vZ+kcFP3tTCjKn8CTuR+3kD8V/l9fE4gLN6q4Ug+j1HqLZRsaNzU9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

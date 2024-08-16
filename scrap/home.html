@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+               body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Navigation Bar */
+        .navbar-brand img {
+            max-height: 73px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('/images/L.jpg') no-repeat center center/cover;
+            color: BLACK;
+            text-align:center;
+            padding: 150px 0;
+            
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .hero .btn-primary {
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 60px 0;
+            background-color: #f4f4f4;
+        }
+
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .about img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Courses Section */
+        .courses {
+            padding: 60px 0;
+        }
+
+        .courses h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .course-item {
+            margin-bottom: 30px;
+        }
+
+        .course-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .course-item p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Faculty Section */
+        .faculty {
+            padding: 60px 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .faculty h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .faculty-item img {
+            max-width: 100%;
+            height: auto;
+            text-align: center;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .faculty-item h3 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .faculty-item p {
+            font-size: 16px;
+            color: gray;
+            text-align: center;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .about-content, .courses .row, .faculty .row {
+                flex-direction: column;
+            }
+
+            .about img {
+                margin-bottom: 20px;
+            }
+        }
+        .hhh{
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.14);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(2.2px);
+            -webkit-backdrop-filter: blur(2.2px);
+            }
+            /*container frame*/
+            .containerframe {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+header {
+  flex: 0 0 auto; /* Header takes up its necessary space */
+}
+
+.flexible-iframe {
+  flex: 1 1 auto; /* Iframe occupies the remaining space */
+  border: none; /* Remove iframe border */
+  width: 100%; /* Full width */
+}
+    </style>
+</head>
+<body>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="hhh">Welcome to the Department of Computer Science and Information Technology</h1>
+            <p class="hhh">Empowering the next generation of technology leaders</p>
+        </div>
+    </section>
+    <div style="text-align: center; padding-top: 5px;">
+        <a href="#about" class="btn btn-primary">Learn More</a>
+    </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About Our Department</h2>
+                    <p>Our department is dedicated to providing high-quality education and research opportunities in the field of computer science and information technology. We aim to foster innovation, critical thinking, and leadership among our students.CSIT is broadly a combination of Computers and Technology. As computers become even more pervasive, the potential for computer-related careers will continue to grow and the career paths in computer-related fields will become more diverse. Problem solving through technology is one of prime aspects of CSIT. The CSIT course includes the emerging areas recommended by the AICTE committee such as Artificial Intelligence, Data Sciences, Machine Learning, IoT, Blockchain Technologies, Virtual Reality and Cyber Security. Students study the design, development & analysis of software and hardware used to solve problems in a variety of business, scientific and social contexts.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="/images/csit_24_c1.jpg" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>Courses We Offer</h2>
+            <div class="row">
+                <div class="col-md-4 course-item">
+                    <h3>Course 1</h3>
+                    <p>Introduction to Computer Science and Programming. Learn the basics of coding, algorithms, and software development.</p>
+                </div>
+                <div class="col-md-4 course-item">
+                    <h3>Course 2</h3>
+                    <p>Data Structures and Algorithms. Dive deeper into the core concepts of computer science that power technology.</p>
+                </div>
+                <div class="col-md-4 course-item">
+                    <h3>Course 3</h3>
+                    <p>Web Development and Design. Create beautiful and responsive websites using modern technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section id="faculty" class="faculty" style="text-align: center;">
+        <div class="container">
+            <h2>HEAD OF THE DEPARTMENT</h2>
+            <div class="row">
+                <div class="col-md-4 faculty-item text-center"></div>
+                <div class="col-md-4 faculty-item text-center">
+                    <img src="/images/SATEESH.jpg" alt="Faculty Member">
+                    <h3</h3>
+                    <p>Mr.G.SATEESH</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
