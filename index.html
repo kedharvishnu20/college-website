@@ -11,12 +11,18 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
         /*home section css code*/
 
 
         /* Body section */
         body {
-            font-family: 'Arial', sans-serif;
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
@@ -707,6 +713,108 @@
 
 
         /*contact us section css code end*/
+
+        /*placement section css code*/
+        /*placement section css code*/
+        /*placement section css code*/
+        /*placement section css code*/
+        .e h1 {
+            margin-top: 20px;
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        
+        /* Batch box styling */
+        .batch-box {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid #ffffff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 300px;
+            cursor: pointer;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .batch-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+        
+        .batch-box h2 {
+            font-size: 2rem;
+        }
+        
+        .batch-box p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+        
+        /* Placed students section */
+        .students-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        #student-card-section {
+            display: none;
+        }
+        
+        .student-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            width: 200px; /* Fixed width */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .student-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            background: rgba(255, 255, 255, 0.2); /* Subtle background change */
+        }
+        
+        .student-card img {
+            width: 150px; /* Fixed width */
+            height: 150px; /* Fixed height */
+            border-radius: 40%; /* Circular shape */
+            margin-bottom: 15px;
+            border: 3px solid #ffffff; /* Thicker border for a more professional look */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+            object-fit: cover; /* Ensure images fill the dimensions without distortion */
+        }
+        
+        .student-card h3 {
+            font-size: 1.2rem;
+            color: black; /* Ensure the text stands out */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .students-section {
+                flex-direction: column;
+            }
+            .batch-box h2 {
+                font-size: 1.5rem; /* Smaller title size */
+            }
+            .student-card h3 {
+                font-size: 1rem; /* Smaller name size */
+            }
+        }
+        
+
+        /*placement end section css code*/
+        /*placement end section css code*/
+        /*placement end section css code*/
+        /*placement end section css code*/
     </style>
 </head>
 
@@ -744,6 +852,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="" style="color: aliceblue;text-align: center;" id="contactbtn"
                         onclick="myFunction4();event.preventDefault();">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="" style="color: aliceblue;text-align: center;" id="placementsbtn"
+                        onclick="myFunction5();event.preventDefault();">PLACEMENTS</a>
                 </li>
             </ul>
         </div>
@@ -1238,7 +1350,143 @@
     <!--contact us section ending-->
     <!--contact us section ending-->
 
+    <!--placement section code-->
+    <!--placement section code-->
+    <!--placement section code-->
+    <!--placement section code-->
+    <div id="e" class="e" style="display: none ;">
+        <h1>CSIT Placement Portal</h1>
 
+        <div id="mainContent">
+            <div class="batch-box" id="batchBox" onclick="toggleStudents()">
+                <h2>2020-2024 Batch</h2>
+                <p>Click to view placed students</p>
+            </div>
+        </div>
+
+        <!-- Placed Students Section -->
+        <div class="student-card-section" id="student-card-section">
+            <div id="studentsSection" class="students-section">
+                <div class="student-card">
+                    <img src=" https://lh3.googleusercontent.com/pw/AP1GczMTgj4agRMoTDF7Vr59zFAwURiemAx0Uss8-fV8kk57Ep7jgTE31JnvndXIwlNfQOrikWeI9fDnOKKZ4zLVnpAbfYV1RU9Gkb8qXpyc_LPYGVyMqFFWViYyjJ_0r3wY8eG6IQAYsV9ArLY_nYgZzosC=w340-h454-s-no-gm?authuser=0" alt="Student 1 K JAHNAVI.jpg">
+                    <h3>K JAHNAVI</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczM5VIFekEqNWy4WtXPqD2cV_q0STiMYqnM-nWb2Nc7BGkjMxvMd-ZvvcpmlpqkrQlF_EeKQXkKxZ9kc-T3zxJvqa1jqnrV-tgNQ3fiLfV38_bRKuI-mPLiueu2gDIveZOd6xlYaw8mSiLn-nmPHSC1w=w340-h454-s-no-gm?authuser=0" alt="Student 2 T DEVANSHU KUMAR.jpg">
+                    <h3>T DEVANSHU KUMAR</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOR9Vqe0PPzX-w4ODJAA0644TCRF-LmhQ2hlMQiYGjpj8NSALSjCweseCV8YkjXRJu3z9GbuASDJsqlKc5X8w9mbZWZb9E8FAfxIDzwfpJHf2uKM8NqlFJV5GUac2betgHN9GhtVO6GMMmFee93u0vC=w340-h454-s-no-gm?authuser=0" alt="Student 3 P TEJA.jpg">
+                    <h3>P TEJA</h3>
+                </div>
+                <div class="student-card">
+                    <img src=" https://lh3.googleusercontent.com/pw/AP1GczOE7JiPvjiW8vYwABvDjwMF-nJ4HB_rM5JJ5HW7uiRh8zV5L5JQpeDcu_-WlcMcCivctf1bCsZ3SLvH9Lod2uq0Tq6E8Yb75gvbjIEFpBxiycUfspGwRJKWd9No9HE10qU797cEUkKSRI9gb854jJbw=w340-h454-s-no-gm?authuser=0" alt="Student 4 K YASHODHA PAVANI.jpg">
+                    <h3> K YASHODHA PAVANI</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczMCE95JJOTpobBkNGbzoWk39kILk5iCg8ijzZEGv1FeZ5l4KICTKJsirFTvg86F8_tDYOU9VIT4W0aCd1JlX-Xz174sMdOmvoU3YzEX9Czd48a40s1OrLz2Sbh_fWCWZpZLiX4puZA3T58qc3WTCB_G=w340-h454-s-no-gm?authuser=0" alt="Student 5 P SHANKAR.jpg">
+                    <h3> P SHANKAR</h3>
+                </div>
+                <div class="student-card">
+                    <img src=" https://lh3.googleusercontent.com/pw/AP1GczO0wSNA_Nqy9NWbCOdjDxaQdLvpmggfRfTxlR-dqnECBkulXiQVAEX8jL8tAq12aaLRseqlVjobO9uSdCBWs_S742cIBs9HmJJGcEWU6Yv68LXmgJA6x4oK0yDiSBiL5hVSGIquJQ4VbmSRnx3OZa0Y=w340-h454-s-no-gm?authuser=0" alt="Student 6 K MOUNIKA.jpg">
+                    <h3>K MOUNIKA</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPBolxdah8V5jLec2CYY780SIa00D94lt1qyDVt9LF_LPlc_ohRJcQ5gatHay84hqD7IEmTGOokofVCK-FzI0ZdpkXbVf14qXxjCmUzafeDKHqX9s0D6ryS59lAJVIL5UeUfvSOr7k3-4eeAw2UPTwh=w340-h454-s-no-gm?authuser=0" alt="Student 7 SUBRAMANYA SAI.jpg">
+                    <h3>SUBRAMANYA SAI</h3>
+                </div>
+                <div class="student-card">
+                    <img src=" https://lh3.googleusercontent.com/pw/AP1GczPmtQOM66rNkmpn6Ld68M4-KTb3krRs5yaFNlpj-pazhU8iEL0R3LclBy900qQVaD8s2-F3stGDRowb9cU-AP5w6ts60B4q5MGznJywBy81fQ0Ui66GKHTPnhR8a3rrIK1FF1KzbVISDMTyo7AoW_XP=w340-h454-s-no-gm?authuser=0" alt="Student 8 SRI SAI CHANDANA.jpg">
+                    <h3>SRI SAI CHANDANA</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPumefzE2cxHjCsfn5mfkp4kKtZzlTATOA_jPFQ3bo-PshRDxvAeqx4ixqPdLHO_OfjBNJwqEn61v9QP3wZBK34YCoit2G5Gg5kPCDpiwvwulLw2OJ_TDhC4sZqrIisE5pPSKrsHSzdi2Jc3hf5ycYN=w340-h454-s-no-gm?authuser=0" alt="Student 9 N HARI PRASANTH.jpg">
+                    <h3>N HARI PRASANTH</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPpfwVvGy7WLHHR7QwXRzP1v4JnlihoY9d3sBN0RPGMpWADS4unzAXiIBqod66nVetuB6yIhTAqN9GB4yl-VlIzSe3_--s37SeP31uMBsOBTQQE0KidXWTjG6CAU8Bp5AJJDZnGQkXslAcAiMtjyjPO=w340-h454-s-no-gm?authuser=0" alt="Student 10 R JAGADEESWARI.jpg">
+                    <h3>R JAGADEESWARI</h3>
+                </div>
+                <div class="student-card">
+                    <img src=" https://lh3.googleusercontent.com/pw/AP1GczMtpK5GLUiKktEV8xzKDluncbR4xFiezXsXZ0VdcAo0mJNwHrOT8KYN7UUBRUTbF6IC2JrH93qccJajY5BaTAwo6jCKKphd6DOGv1C5rLOcvE29SRBDePNl1u7frTivgujq_r1fqRbC-GyjWiRUVAx4=w340-h454-s-no-gm?authuser=0 alt="Student 11 A LAKSHMAN RAO.jpg">
+                    <h3>A LAKSHMAN RAO</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOGJD8mxqmNJxsbqr_A4yxVdjKcXatTkhgUV3am2Lf9O0xipWEgDuYKl2HlbDARdG2xMgXK3jZxXDU_S6bH54yuuy57gpxrIhCtNjyp4QS42wWmsD9zggwWeSSLV_fGY2yFuMtsl6SWg1NGu-w99B28=w340-h454-s-no-gm?authuser=0" alt="Student 12 S SRI RAMANI.jpg ">
+                    <h3> S SRI RAMANI </h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczM146GiCr956oyJwjAqiU1OXqnu9paATxJHpn8bEiU2S1SY4mZPcf_NfLWHGrfsmoto414hTVehQi-pkNJAiM6a2ZPs5931QttzSmYYGvrUsexS4LlpD6cc9jsUINoh93MmnzyER2ZAyu2CQdrkQJSt=w340-h454-s-no-gm?authuser=0" alt="Student 13 K SAI YESWANTH KUMAR.jpg">
+                    <h3> K SAI YESWANTH KUMAR</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczMOfenNgf32x0MZf72AOqf89z2poAY5g-DfXJF91EIy4yZBJwUW78n4ofGp_c_xY6x5OJe2gthBram0OFmKIzgBS74xdESA3SbdVSNv_IBYRWmRV-36F-lMwghIkn8V2syuHdwlpuavJLHEvUBHzPJ1=w340-h454-s-no-gm?authuser=0
+" alt="Student 14 K TEJESH.jpg">
+                    <h3>K TEJESH</h3>
+                </div>
+                <div class="student-card">
+                    <img src=" https://lh3.googleusercontent.com/pw/AP1GczPmmtc8OVGPm_bDRXB_Ebn63Ojhdv2JvycEZ736r2h182gc5jKKj8EBAHsO-85x07aI_cfxPO2nESJ3gNCrmnss7k7vLmSIRIy7zhfdXu6aG4aeK7Qgi9444o2z7YL2I0zRIsdL_2FcQ_dnHXXiL3UX=w655-h765-s-no-gm?authuser=0" alt="Student 15 B PAVAN KRISHNA.jpg">
+                    <h3> B PAVAN KRISHNA</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNEih49e_5OKsOAIsYR2XbT24EqMT28PQzka3VwOcard4-UEyHeyYqf6Ul36sSHOZNChQUb0HvkFGXbYnVOwh2FZFurHfLtVs_K1XeRKS7JI_ym5l2tfug7gZCB8-wLlcCVk6NIuE9biSV1GSxp3Ixo=w430-h765-s-no-gm?authuser=0" alt="Student 16 M V S RAMALINGA SWAMY.jpg ">
+                    <h3>M V S RAMALINGA SWAMY</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOAd3zlx3JegVShpO88mDmYq1-XIUhNAd-pRvkbVEvSJxetuVxjfLYau6I9Wcw6wOF_Ex5_5ZjDUkQCWGZEtd6grBaNmc24m-9XJQ9R_Oa_-U2WZRAWT4V_33S71FO0DfFAm3_5vBVw_exsd8EUcvEe=w510-h765-s-no-gm?authuser=0" alt="Student 17 A BALAJI GANESH.jpg">
+                    <h3>A BALAJI GANESH</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOHdlL5V6vfbE-K7CG_uu4puvr_XePhK-HK05ngdtI_4GYI-HAaXyJ0ORgNhKRmybgf0o5fKhoCEDQ7vDbBZjOcr0FMSjuxOQ79V-o_Tq0h8e4VduudYH5i8JOVN7Dh6N_1HIT4852i9_-T-3UdOSVD=w765-h765-s-no-gm?authuser=0" alt="Student 18 G PAVAN KUMAR.jpg">
+                    <h3>G PAVAN KUMAR</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczMAtCpVRXqRZapXkLC-3HW0PK7yA2OgiBC3Cm2a6XhQSfmnilaxdh1SFqWeOIXSXDdxMt7o-sePpmblHa4x8Of2U38N2JiYEHrSkC5XKSACuBWRajtvxpYthQ-ov1fm0ALUPqTILNK6b8BbCX9SmUOa=w430-h765-s-no-gm?authuser=0" alt="Student 19 K SAI SRIKARI.jpg">
+                    <h3> K SAI SRIKARI</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczMM2ZJPHI0vTNZb3BaZn5ZBVzYIAUeJodvrmsxFKRXiEkmKKBaXlqmFd7Y__ZANZjHuEmsQ044Y7XBNwweSLf087-wchD6610SJ7Zjk_LmlIjIcvOfWmqDFs-bls7pJIxULGR3Ln21KY-ekO64VyzKX=w335-h765-s-no-gm?authuser=0" alt="Student 20 D SAI RAVITEJA REDDY.jpg">
+                    <h3> D SAI RAVITEJA REDDY</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPR0f_owWpOVlwLaAPwTjLAf561HRIk0ko5QWMVUmavRTD5Kaw0py1LtzzNEk93E0yfF0xEtD8nw6u08Oc3unEGrHWh2OzUxpVX_cOs2pl0oZORXSEhlTBv0XZbLuAXzF9x6cazWahIGXlfR8xTKbRs=w707-h765-s-no-gm?authuser=0" alt="Student 21 P DHARAN KUMAR.jpg">
+                    <h3>P DHARAN KUMAR</h3>
+                </div>
+                <div class="student-card">
+                    <img src=" https://lh3.googleusercontent.com/pw/AP1GczO1zCK0AtQgVgBlgEEeVIEvq_4tZmprY_igXij_OCF_Tn3jBr5L_n2Dc9aWJRHZWDkJQ3mkojNKsxwu5U97nhZknfDu46XoGOzh0W65IxDfbBua-FaJHwaVl-2sYaGl-0u_p_Ak3hUA6-vQyO7yKQey=w510-h765-s-no-gm?authuser=0" alt="Student 22 CH VARUN TEJA.jpg">
+                    <h3>CH VARUN TEJAn</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPu8mUyy-JOjSwuHaTi7NLtOturO-bDzahZpXT7Rq4qzCZfqnLZMxfBpXyVgyf8lTcDSGCkMpMMknYOhhlPhuiPh1uPIVYOlMRn222jtrFMEYhZi-3N4XK-QYC9qUz0VokWO9Q90NNGmm868L2EHRCq=w510-h765-s-no-gm?authuser=0" alt="Student 23  K MAHALAKSHMI.jpg">
+                    <h3>K MAHALAKSHMI</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPDflSmNmBoS_5xLiOVD49AG0vrkLhzV5x7OTyV5R5A7UfPRFzEuqLnqw5NPubo7uqMcroHnqv9zRqULH2EA1p0ui0xV4OP5zTDM_tgy0yUEXlAmQHiAgIItv_N5grtyGY1HYPe0nZKX8withyMQUPM=w727-h765-s-no-gm?authuser=0" alt="Student 24 S VAGDEVI.jpg">
+                    <h3>S VAGDEVI</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczMhBCUzOTtVkHSuTwO_UyH4LxB2_OZD4N0Bs2tiYGX2ZDxoDtchS9j3Ep9gV3JkcfVaYfGELAR6cXw9f-MjGVTzIcvYXrdxRUm_I9pCiX4tfBmNAN2oED8g3IKItNhBIXsYT3k7QRh99n44moLHaIne=w991-h765-s-no-gm?authuser=0" alt="Student 25 A SAI MAHESH.jpg">
+                    <h3>A SAI MAHESH</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNyMi3eXfEZeuKUXmJse4ExIsNmxYd4IUod7hislfvv2eYWu-A8i37Uwhp59pmx20KvHJSsMBsACUEJgCeEavK1I6GVByoxxSLJ03j0e2LNtYJ5W1LGzjSexAOGjT545sRDNzW-orBdElYXMWuEPdPL=w765-h765-s-no-gm?authuser=0" alt="Student 26 K JASWANTH.jpg">
+                    <h3>K JASWANTH</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNeJNZ5xhKtAPOGgqP6BPHnGPNh7i2cUlfROAP0_yXSBc-_EVRYtBm0pJWc_-EWQySTGDTHI4spQcHuoEiGwPcViA-IloDa8HkfuyEUr3Pf7pERvhSOgkFjg7gihCei-Dn_2wueSSjt5Nfmj8c4FDyv=w491-h765-s-no-gm?authuser=0" alt="Student 27 T NIKITHA JAHNAVI.jpg">
+                    <h3>T NIKITHA JAHNAVI</h3>
+                </div>
+                <div class="student-card">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczM-dYSleg_367029haerXZU21eiZuI3Ga2tpkmFBLv5rG0m6IiSHcDs_ealUPJJNlazpNccXdYHB1Z8sJPsF-o2g7vg_JAsP9YQRsjLx8JudDVbWYoDG-QEm9-DVVRmoMG0HnYapRFT0xoG8YW2uaeV=w574-h765-s-no-gm?authuser=0" alt="Student 28 K JAHNAVI 2.jpg">
+                    <h3>K JAHNAVI</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--placement end section code-->
+    <!--placement end section code-->
+    <!--placement end section code-->
+    <!--placement end section code-->
 </body>
 <script>
     var a = document.getElementById("home_section_main");
@@ -1251,7 +1499,7 @@
         b.style.display = "none";
         c.style.display = "none";
         d.style.display = "none";
-
+        e.style.display = "none";
     }
 
     function myFunction2() {
@@ -1259,23 +1507,33 @@
         b.style.display = "block";
         c.style.display = "none";
         d.style.display = "none";
-
+        e.style.display = "none";
     }
     function myFunction3() {
         a.style.display = "none";
         b.style.display = "none";
         c.style.display = "block";
         d.style.display = "none";
-
+        e.style.display = "none";
     }
     function myFunction4() {
         a.style.display = "none";
         b.style.display = "none";
         c.style.display = "none";
         d.style.display = "block";
-
+        e.style.display = "none";
     }
-
+    function myFunction5() {
+        a.style.display = "none";
+        b.style.display = "none";
+        c.style.display = "none";
+        d.style.display = "none";
+        e.style.display = "block";
+    }
+    function toggleStudents() {
+    document.getElementById("student-card-section").style.display="block";
+    document.getElementById("mainContent").style.visibility="hidden";
+}
 
 </script>
 <!-- Bootstrap JS and dependencies -->
